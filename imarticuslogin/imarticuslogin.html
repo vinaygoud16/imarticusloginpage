@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+	text-align:center;
+	margin-left: 40%;
+    margin-right:30%;
+    margin-top: 10%;
+    background-color:#1A5276;
+    border: 4px solid black;
+    border:square;
+  }
+</style>
+<script>
+
+function handleForm(e)
+{
+	e.preventDefault()
+	  alert("The form was submitted");
+}
+
+function myFunction() {
+  var x = document.getElementById("username");
+  x.value = x.value.toUpperCase();
+}
+function mouseOver() {
+	  document.getElementById("submit").style.color = "green";
+	}
+
+function mouseOut() {
+	  document.getElementById("submit").style.color = "black";
+	}
+
+
+</script>
+
+</head>
+<body align="center">
+
+<h1 >IMARTICUS EDUCATION</h1>
+<img src="https://mma.prnewswire.com/
+media/900145/Imarticus_Logo.jpg?p=twitter" 
+width="100" heigh="100" > 
+<table align="center">
+<form onsubmit="handleForm(event)" id="form">
+
+<tr>
+<td>StudentName: </td>
+<td><input type="text" id="username" onchange="myFunction()" required></td>
+</tr>
+
+
+<tr>
+<td>phoneNumber: </td>
+<td><input type="number" id="phonenumber" maxlength="10" required></td>
+</tr>
+<tr>
+<td>StudentEmail: </td>
+<td><input type="email" ></td>
+</tr>
+<tr>
+<td>BranchNo: </td>
+<td><input type="text" id="Branch" required></td>
+</tr>
+<tr>
+<td>Strating Date</td>
+<td><input type="date" class="box" required></td>
+</tr>
+<tr>
+<td>Location: </td>
+<td>
+<select id="teams" class="box">
+<option value="Hyd">Hyderbad</option>
+<option value="Tamil nadu"> Tamil Nadu</option>
+<option value="Bangalore">Bangalore</option>
+<option value="pune">Pune</option>
+<option value="Mumbai">Mumbai</option>
+<option value="New Delhi">New Delhi</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Agra">Agra</option>
+
+</td>
+</select>
+</tr>
+
+<tr>
+<td >CourseName</td>
+<TD>
+<select id="teams" class="box">
+<option value="JAVA FSD">JAVA FSD</option>
+<option value="DATA SCIENCE">DATA SCIENCE</option>
+<option value="CYBER SECURITY">CYBER SECURITY</option>
+<option value="PYTHON FSD">PYTHON FSD</option>
+</TD>
+</select>
+</tr>
+<tr>
+<td>Gender: </td>
+<td><input type="radio" name="gender" value="male">Male</td>
+<td><input type="radio" name="gender" value="female">Female</td>
+<td><input type="radio" name="gender" value="other">Other</td>
+</tr>
+
+<footer>
+<tr>
+<TD>for more info:</TD>
+<TD><nav>
+<a href="https://www.google.com/search?q=imarticus+learnin
+g&rlz=1C1RXQR_enIN992IN992&oq=imarticus+&aqs=chrome.2.69i57j69i59j0i
+131i433i512j46i175i199i512j0i512j69i60l3.7056j0j7&sourceid=chrome&ie=UTF-8">
+<INPUT TYPE="BUTTON" value="click">
+</a>
+</nav>
+
+</TD>
+<td>
+<input type="submit" value="submit" id="submit" onmouseover="mouseOver()" onmouseout="mouseOut()">
+</td>
+</tr>
+</tr>
+
+</footer>
+</form> 
+  
+</table>
+</body>
+
+</html>
